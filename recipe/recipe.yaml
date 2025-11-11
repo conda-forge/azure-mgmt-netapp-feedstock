@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-netapp
-  version: 13.7.0
+  version: 14.0.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_netapp-${{ version }}.tar.gz
-  sha256: 03905e0c6cbcd587569d5865e3853cafdd455061400c8c68b603407b06b5cd3a
+  sha256: ca460b8ac64c8703d49e8b39a49ce06f166ca85e91e88710440c8c485fbde86e
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - python >=${{ python_min }}
     - isodate >=0.6.1
     - typing_extensions >=4.6.0
-    - azure-common >=1.1
     - azure-mgmt-core >=1.6.0
 tests:
   - python:
