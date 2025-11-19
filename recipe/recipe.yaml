@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-netapp
-  version: 14.0.0
+  version: "14.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_netapp-${{ version }}.tar.gz
-  sha256: ca460b8ac64c8703d49e8b39a49ce06f166ca85e91e88710440c8c485fbde86e
+  sha256: 3f9644f683ce3bca0ba2ba723d376c73bfdfe10310c6c97c3e803511a83fe678
 
 build:
   number: 0
